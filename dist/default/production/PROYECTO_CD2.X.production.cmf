@@ -1,0 +1,1348 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\PROYECTO_CD2.X.production.obj
+cinit CODE 0 24F6 24F6 30 1
+intcode_body CODE 0 2100 2100 AE 1
+text0 CODE 0 8C2 8C2 D3A 1
+text1 CODE 0 15FC 15FC 2D2 1
+text2 CODE 0 25E2 25E2 1E 1
+text3 CODE 0 2578 2578 26 1
+text4 CODE 0 2416 2416 42 1
+text5 CODE 0 2380 2380 52 1
+text6 CODE 0 2550 2550 28 1
+text7 CODE 0 2232 2232 80 1
+text8 CODE 0 24C4 24C4 32 1
+text9 CODE 0 25C2 25C2 20 1
+text10 CODE 0 2600 2600 E 1
+text11 CODE 0 260E 260E 8 1
+text12 CODE 0 2490 2490 34 1
+text13 CODE 0 2322 2322 5E 1
+text14 CODE 0 1C34 1C34 12E 1
+text15 CODE 0 1E78 1E78 F4 1
+text16 CODE 0 2458 2458 38 1
+text17 CODE 0 2526 2526 2A 1
+text18 CODE 0 259E 259E 24 1
+text19 CODE 0 1F6C 1F6C E6 1
+text20 CODE 0 1A88 1A88 1AC 1
+text21 CODE 0 2052 2052 AE 1
+text22 CODE 0 22B2 22B2 70 1
+text23 CODE 0 21AE 21AE 84 1
+text24 CODE 0 23D2 23D2 44 1
+text25 CODE 0 18CE 18CE 1BA 1
+text27 CODE 0 1D62 1D62 116 1
+idataCOMRAM CODE 0 2616 2616 2 1
+cstackCOMRAM COMRAM 1 1 1 47 1
+cstackBANK0 BANK0 1 60 60 43 1
+temp COMRAM 1 4A 4A 1 1
+bssBANK0 BANK0 1 A3 A3 4 1
+intcode CODE 0 8 8 E 1
+smallconst SMALLCONST 0 800 800 C2 1
+dataCOMRAM COMRAM 1 48 48 2 1
+$C:\Users\juanc\AppData\Local\Temp\sc6o.obj
+idloc IDLOC 0 200000 200000 8 1
+reset_vec CODE 0 0 0 4 1
+end_init CODE 0 16 16 4 1
+config CONFIG 0 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM A7-7FF 1
+SFR F60-FFF 1
+BANK0 A7-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7 1
+CONST 1A-7FF 1
+CONST 2618-7FFF 1
+STACK A7-7FF 1
+SMALLCONST 2618-7FFF 1
+CODE 4-7 1
+CODE 1A-7FF 1
+CODE 2618-7FFF 1
+BIGRAM 4B-5F 1
+BIGRAM A7-7FF 1
+COMRAM 4B-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 2618-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\PROYECTO_CD2.X.production.obj
+8 intcode CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+8 intcode CODE >76:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1D62 text27 CODE >20:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1D62 text27 CODE >24:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1D68 text27 CODE >26:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1D6C text27 CODE >27:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1D70 text27 CODE >28:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1D78 text27 CODE >29:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1D7C text27 CODE >30:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1D84 text27 CODE >31:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1D88 text27 CODE >32:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1D90 text27 CODE >33:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1D94 text27 CODE >34:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1D9C text27 CODE >36:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1DA0 text27 CODE >37:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1DA4 text27 CODE >38:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1DAC text27 CODE >39:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1DB0 text27 CODE >40:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1DB8 text27 CODE >41:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1DBC text27 CODE >42:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1DC4 text27 CODE >43:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1DC8 text27 CODE >44:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1DD0 text27 CODE >46:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1DD4 text27 CODE >47:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1DD8 text27 CODE >48:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1DE0 text27 CODE >49:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1DE4 text27 CODE >50:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1DEC text27 CODE >51:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1DF0 text27 CODE >52:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1DF8 text27 CODE >53:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1DFC text27 CODE >54:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1E04 text27 CODE >56:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1E08 text27 CODE >57:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1E0C text27 CODE >58:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1E14 text27 CODE >59:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1E18 text27 CODE >60:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1E20 text27 CODE >61:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1E24 text27 CODE >62:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1E2C text27 CODE >63:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1E30 text27 CODE >64:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1E38 text27 CODE >67:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1E40 text27 CODE >69:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1E58 text27 CODE >70:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1E68 text27 CODE >69:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1E6E text27 CODE >71:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1E6E text27 CODE >73:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1E76 text27 CODE >75:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+2100 intcode_body CODE >76:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+2132 intcode_body CODE >77:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+2136 intcode_body CODE >78:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+213C intcode_body CODE >79:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+2146 intcode_body CODE >80:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+214E intcode_body CODE >82:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+2156 intcode_body CODE >83:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+2158 intcode_body CODE >85:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+215C intcode_body CODE >86:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+2168 intcode_body CODE >87:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+216C intcode_body CODE >88:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+2170 intcode_body CODE >89:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+2172 intcode_body CODE >91:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+18CE text25 CODE >7:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+18D0 text25 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+18D4 text25 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+18D8 text25 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+18DC text25 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+18E4 text25 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+18E8 text25 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+18F0 text25 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+18F2 text25 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+18F4 text25 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+18F6 text25 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+18F8 text25 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+18FE text25 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1904 text25 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+190A text25 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1910 text25 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1914 text25 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1916 text25 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+191C text25 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1A16 text25 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1A1C text25 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1A22 text25 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1A28 text25 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1A2E text25 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1A34 text25 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1A3A text25 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1A3E text25 CODE >59:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1A40 text25 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1A46 text25 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1A48 text25 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1A78 text25 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1A80 text25 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1A84 text25 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+1A86 text25 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+23D2 text24 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+23D4 text24 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+23DC text24 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+23E0 text24 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+23E4 text24 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+23EE text24 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+23F0 text24 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+23F2 text24 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+23F6 text24 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+23FC text24 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+2402 text24 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+240C text24 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.35\include\adconv.h
+21AE text23 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+21AE text23 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+21B2 text23 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+21B6 text23 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+21BE text23 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+21C2 text23 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+21C6 text23 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+21CE text23 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+21D2 text23 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+21DA text23 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+21E2 text23 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+21E6 text23 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+21E8 text23 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+21EE text23 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+21F0 text23 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+21F4 text23 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+21FA text23 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+2206 text23 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+220E text23 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+2210 text23 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+2216 text23 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+221A text23 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+2220 text23 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+2228 text23 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+22B2 text22 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+22B2 text22 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+22B6 text22 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+22BA text22 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+22C2 text22 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+22C6 text22 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+22CA text22 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+22D2 text22 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+22DA text22 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+22DE text22 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+22E0 text22 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+22E6 text22 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+22E8 text22 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+22EC text22 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+22F8 text22 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+2300 text22 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+2306 text22 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+230A text22 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+2310 text22 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+2318 text22 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+2052 text21 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+2052 text21 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+2062 text21 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+2070 text21 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+2072 text21 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+207A text21 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+2098 text21 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+209A text21 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+20A6 text21 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+20AE text21 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+20CC text21 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+20CE text21 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+20D6 text21 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+20E0 text21 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+20E2 text21 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+20E4 text21 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+20E8 text21 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+20EC text21 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+20F0 text21 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+20F2 text21 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+1A88 text20 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1A88 text20 CODE >90:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1A9C text20 CODE >91:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1AB0 text20 CODE >92:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1ACC text20 CODE >93:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1ADA text20 CODE >94:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1AF6 text20 CODE >95:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B04 text20 CODE >96:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B08 text20 CODE >97:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B0A text20 CODE >98:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B0C text20 CODE >99:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B0E text20 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B10 text20 CODE >101:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B12 text20 CODE >102:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B1E text20 CODE >103:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B20 text20 CODE >104:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B2C text20 CODE >106:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B34 text20 CODE >110:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B3C text20 CODE >111:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B3E text20 CODE >112:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B56 text20 CODE >114:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B5E text20 CODE >115:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B60 text20 CODE >113:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B6A text20 CODE >117:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B72 text20 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B7A text20 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B7C text20 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B94 text20 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B9C text20 CODE >126:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1B9E text20 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1BA6 text20 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1BAA text20 CODE >131:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1BB6 text20 CODE >132:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1BC2 text20 CODE >133:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1BC2 text20 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1BC6 text20 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1BD2 text20 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1BDE text20 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1BE2 text20 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1BEE text20 CODE >141:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1BF2 text20 CODE >142:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1BFE text20 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1C0A text20 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1C0E text20 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+1F6C text19 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+1F6C text19 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+1F86 text19 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+1F94 text19 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+1FAE text19 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+1FBC text19 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+1FC8 text19 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+1FCE text19 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+1FD2 text19 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+1FD6 text19 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+1FDA text19 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+1FDC text19 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+1FE8 text19 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+1FEA text19 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+1FF6 text19 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+1FFA text19 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+2002 text19 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+2012 text19 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+201E text19 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+2020 text19 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+2020 text19 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+2028 text19 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+202C text19 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+259E text18 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftneg.c
+259E text18 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftneg.c
+25A8 text18 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftneg.c
+25B4 text18 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftneg.c
+25C0 text18 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftneg.c
+2526 text17 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.35\include\pwm_2.h
+2528 text17 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.35\include\pwm_2.h
+252C text17 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\include\pwm_2.h
+2530 text17 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.35\include\pwm_2.h
+2536 text17 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.35\include\pwm_2.h
+253A text17 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.35\include\pwm_2.h
+2542 text17 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.35\include\pwm_2.h
+2546 text17 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.35\include\pwm_2.h
+254A text17 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.35\include\pwm_2.h
+254E text17 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.35\include\pwm_2.h
+2458 text16 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awtoft.c
+2458 text16 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awtoft.c
+245C text16 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awtoft.c
+2460 text16 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awtoft.c
+2468 text16 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awtoft.c
+246C text16 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awtoft.c
+1E78 text15 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1E78 text15 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1E92 text15 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1EA0 text15 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1EBA text15 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1EC8 text15 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1ECE text15 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1ED2 text15 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1ED6 text15 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1EDA text15 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1EDC text15 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1EDE text15 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1EEA text15 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1EF6 text15 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1EFA text15 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1EFE text15 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1F0A text15 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1F12 text15 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1F1A text15 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1F1E text15 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1F22 text15 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1F26 text15 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1F32 text15 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1F3A text15 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1F42 text15 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1F46 text15 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+1C34 text14 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1C34 text14 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1C58 text14 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1C6A text14 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1C9E text14 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1CA0 text14 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1CAC text14 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1CC2 text14 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1CC8 text14 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1CCE text14 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1CDA text14 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1CEC text14 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1CF8 text14 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1CFE text14 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1D00 text14 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1D08 text14 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1D1A text14 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1D26 text14 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1D2A text14 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1D34 text14 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1D3E text14 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+1D50 text14 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+2322 text13 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.35\include\pwm_2.h
+2322 text13 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.35\include\pwm_2.h
+2362 text13 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.35\include\pwm_2.h
+237A text13 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.35\include\pwm_2.h
+237C text13 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.35\include\pwm_2.h
+237E text13 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.35\include\pwm_2.h
+2490 text12 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2492 text12 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2496 text12 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2498 text12 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+249A text12 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+249C text12 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+24A4 text12 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+24A6 text12 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+24AC text12 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+24BC text12 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+260E text11 CODE >102:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+260E text11 CODE >104:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2614 text11 CODE >105:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2600 text10 CODE >95:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2602 text10 CODE >97:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2606 text10 CODE >98:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+260C text10 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+25C2 text9 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+25C4 text9 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+25C8 text9 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+25CA text9 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+25CC text9 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+25CE text9 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+25D6 text9 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+25D8 text9 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+25E0 text9 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+24C4 text8 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+24C4 text8 CODE >89:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+24DC text8 CODE >91:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+24EE text8 CODE >89:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+24F4 text8 CODE >93:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2232 text7 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2232 text7 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2236 text7 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2238 text7 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+223A text7 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+223C text7 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2254 text7 CODE >59:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2262 text7 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2268 text7 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+226E text7 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+227E text7 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2284 text7 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+228C text7 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2292 text7 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2298 text7 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+229E text7 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+22A4 text7 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+22AA text7 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+22B0 text7 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2550 text6 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2552 text6 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2558 text6 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+255C text6 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2562 text6 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2568 text6 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+256E text6 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2570 text6 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2576 text6 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.35\include\lcd8e.h
+2380 text5 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+2380 text5 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+2388 text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+2390 text5 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+2394 text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+2396 text5 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+239C text5 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+239E text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+23A2 text5 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+23A8 text5 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+23B4 text5 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+23BC text5 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+23BE text5 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+23C4 text5 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+23C8 text5 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+23C8 text5 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+23D0 text5 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+2416 text4 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwmod.c
+2416 text4 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwmod.c
+241E text4 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwmod.c
+2422 text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwmod.c
+2424 text4 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwmod.c
+242A text4 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwmod.c
+242C text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwmod.c
+2430 text4 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwmod.c
+243C text4 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwmod.c
+2444 text4 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwmod.c
+244A text4 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwmod.c
+244E text4 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwmod.c
+244E text4 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwmod.c
+2456 text4 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwmod.c
+2578 text3 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+2578 text3 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+2584 text3 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+258C text3 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+2594 text3 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+25E2 text2 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\isdigit.c
+25E4 text2 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\isdigit.c
+15FC text1 CODE >492:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+15FC text1 CODE >533:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1604 text1 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1606 text1 CODE >538:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+160E text1 CODE >541:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+161E text1 CODE >542:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1620 text1 CODE >546:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1628 text1 CODE >548:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+162C text1 CODE >597:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1640 text1 CODE >598:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1648 text1 CODE >600:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1664 text1 CODE >601:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1690 text1 CODE >602:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+16A6 text1 CODE >757:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+16B2 text1 CODE >758:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+16BC text1 CODE >760:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+16C4 text1 CODE >764:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+16C6 text1 CODE >765:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+16D6 text1 CODE >764:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+16E8 text1 CODE >768:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1704 text1 CODE >767:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1716 text1 CODE >799:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+172A text1 CODE >805:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1732 text1 CODE >806:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+173A text1 CODE >807:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+173C text1 CODE >635:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1768 text1 CODE >1259:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1780 text1 CODE >1261:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1784 text1 CODE >1262:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1788 text1 CODE >1263:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1790 text1 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+179C text1 CODE >1306:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+17BC text1 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+17C0 text1 CODE >1345:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+17D4 text1 CODE >1346:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+17DA text1 CODE >1381:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+17F0 text1 CODE >1382:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+17FE text1 CODE >1384:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1806 text1 CODE >1428:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+180E text1 CODE >1430:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+181E text1 CODE >1431:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+182C text1 CODE >1438:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1838 text1 CODE >1439:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1848 text1 CODE >1472:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+184C text1 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+184E text1 CODE >1489:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+1890 text1 CODE >1524:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+18A0 text1 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+18A8 text1 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+18C0 text1 CODE >1538:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+8C2 text0 CODE >93:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8C2 text0 CODE >94:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8C6 text0 CODE >95:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8D4 text0 CODE >96:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8D8 text0 CODE >97:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8DC text0 CODE >98:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8DE text0 CODE >99:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8E0 text0 CODE >100:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8E8 text0 CODE >101:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8EA text0 CODE >102:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8EC text0 CODE >103:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8EE text0 CODE >104:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8F0 text0 CODE >105:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8F2 text0 CODE >106:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8F4 text0 CODE >107:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8F6 text0 CODE >108:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8F8 text0 CODE >109:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8FA text0 CODE >110:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8FC text0 CODE >111:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+8FE text0 CODE >112:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+93A text0 CODE >113:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+94C text0 CODE >115:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+956 text0 CODE >116:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+95A text0 CODE >118:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+968 text0 CODE >119:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+96C text0 CODE >120:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+976 text0 CODE >121:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+98A text0 CODE >122:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+996 text0 CODE >123:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+9AC text0 CODE >124:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+9B6 text0 CODE >125:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+9CA text0 CODE >126:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+9D6 text0 CODE >128:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+A02 text0 CODE >129:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+A0C text0 CODE >130:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+A20 text0 CODE >131:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+A2C text0 CODE >133:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+A58 text0 CODE >134:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+A62 text0 CODE >135:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+A76 text0 CODE >136:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+A82 text0 CODE >137:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+A90 text0 CODE >138:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+A9A text0 CODE >140:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+AA4 text0 CODE >141:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+AA6 text0 CODE >142:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+AB6 text0 CODE >143:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+AC8 text0 CODE >145:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+AD2 text0 CODE >146:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+AEE text0 CODE >147:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+AFA text0 CODE >148:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+B04 text0 CODE >149:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+B0E text0 CODE >150:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+B20 text0 CODE >151:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+B2A text0 CODE >152:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+B48 text0 CODE >153:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+B50 text0 CODE >154:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+B58 text0 CODE >155:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+B5E text0 CODE >156:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+B64 text0 CODE >158:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+B9A text0 CODE >159:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+BA2 text0 CODE >160:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+BAA text0 CODE >161:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+BD2 text0 CODE >162:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+BD8 text0 CODE >163:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+BE2 text0 CODE >165:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+C04 text0 CODE >166:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+C0C text0 CODE >167:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+C14 text0 CODE >168:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+C3C text0 CODE >169:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+C42 text0 CODE >170:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+C4C text0 CODE >172:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+C56 text0 CODE >173:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+C5E text0 CODE >174:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+C68 text0 CODE >175:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+C6A text0 CODE >176:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+C74 text0 CODE >177:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+C7C text0 CODE >179:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+C86 text0 CODE >180:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+C90 text0 CODE >181:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+C92 text0 CODE >182:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+C9C text0 CODE >183:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+CA2 text0 CODE >184:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+CAC text0 CODE >186:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+CBA text0 CODE >188:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+CC4 text0 CODE >190:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+CCE text0 CODE >191:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+CEA text0 CODE >192:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+CF6 text0 CODE >193:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+D02 text0 CODE >194:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+D0A text0 CODE >195:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+D14 text0 CODE >197:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+D1E text0 CODE >198:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+D2E text0 CODE >199:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+D32 text0 CODE >201:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+D40 text0 CODE >202:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+D56 text0 CODE >203:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+D6A text0 CODE >205:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+DBA text0 CODE >206:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+DFE text0 CODE >207:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+E0A text0 CODE >208:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+E14 text0 CODE >209:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+E28 text0 CODE >210:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+E34 text0 CODE >211:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+E4A text0 CODE >212:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+E54 text0 CODE >213:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+E68 text0 CODE >214:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+E74 text0 CODE >216:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+EA0 text0 CODE >217:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+EAA text0 CODE >218:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+EBE text0 CODE >219:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+ECA text0 CODE >221:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+EF6 text0 CODE >222:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+F00 text0 CODE >223:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+F14 text0 CODE >224:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+F20 text0 CODE >225:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+F2E text0 CODE >226:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+F38 text0 CODE >228:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+F42 text0 CODE >229:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+F44 text0 CODE >230:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+F4A text0 CODE >231:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+F5C text0 CODE >233:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+F6A text0 CODE >234:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+F80 text0 CODE >235:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+F94 text0 CODE >237:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+FE4 text0 CODE >238:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1028 text0 CODE >239:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1034 text0 CODE >240:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+103E text0 CODE >241:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+105A text0 CODE >242:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1066 text0 CODE >243:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1070 text0 CODE >244:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+107A text0 CODE >245:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+108C text0 CODE >246:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1096 text0 CODE >247:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+10B4 text0 CODE >248:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+10BC text0 CODE >249:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+10C4 text0 CODE >250:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+10CA text0 CODE >251:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+10D0 text0 CODE >253:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1106 text0 CODE >254:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+110E text0 CODE >255:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1116 text0 CODE >256:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+113E text0 CODE >257:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1144 text0 CODE >258:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+114E text0 CODE >260:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1170 text0 CODE >261:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1178 text0 CODE >262:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1180 text0 CODE >263:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+11A8 text0 CODE >264:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+11AE text0 CODE >265:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+11B8 text0 CODE >267:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+11C2 text0 CODE >268:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+11CA text0 CODE >269:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+11D4 text0 CODE >270:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+11D6 text0 CODE >271:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+11E0 text0 CODE >272:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+11E8 text0 CODE >274:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+11F2 text0 CODE >275:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+11FC text0 CODE >276:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+11FE text0 CODE >277:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1208 text0 CODE >278:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+120E text0 CODE >280:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+121C text0 CODE >281:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1224 text0 CODE >283:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+122E text0 CODE >285:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1238 text0 CODE >286:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1254 text0 CODE >287:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1260 text0 CODE >288:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+126E text0 CODE >289:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1284 text0 CODE >290:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1298 text0 CODE >292:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+12E8 text0 CODE >293:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+132C text0 CODE >294:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1338 text0 CODE >295:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1344 text0 CODE >296:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+134A text0 CODE >297:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1354 text0 CODE >298:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+135E text0 CODE >300:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1372 text0 CODE >301:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+137C text0 CODE >302:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+138A text0 CODE >304:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1396 text0 CODE >305:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+13A6 text0 CODE >306:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+13AA text0 CODE >308:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+13B6 text0 CODE >309:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+13C0 text0 CODE >310:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+13D4 text0 CODE >311:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+13E0 text0 CODE >312:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+142C text0 CODE >313:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1436 text0 CODE >314:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1450 text0 CODE >315:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+145C text0 CODE >316:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1462 text0 CODE >318:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+14C4 text0 CODE >319:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+14CE text0 CODE >320:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+14EA text0 CODE >321:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+14F6 text0 CODE >322:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+14FC text0 CODE >324:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1506 text0 CODE >325:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+152A text0 CODE >326:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1536 text0 CODE >327:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1540 text0 CODE >328:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1554 text0 CODE >329:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+155A text0 CODE >330:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1564 text0 CODE >331:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+156E text0 CODE >332:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1574 text0 CODE >334:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+157E text0 CODE >335:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+1592 text0 CODE >336:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+15A8 text0 CODE >337:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+15B2 text0 CODE >338:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+15BC text0 CODE >339:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+15C2 text0 CODE >341:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+15D6 text0 CODE >342:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+15E0 text0 CODE >343:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+15EE text0 CODE >344:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+15F8 text0 CODE >117:D:\CD2\MPLABXProjects\PROYECTO_CD2.X\proyecto.c
+24F6 cinit CODE >901:C:\Users\juanc\AppData\Local\Temp\sc6o.
+24F6 cinit CODE >903:C:\Users\juanc\AppData\Local\Temp\sc6o.
+24F6 cinit CODE >906:C:\Users\juanc\AppData\Local\Temp\sc6o.
+24F6 cinit CODE >929:C:\Users\juanc\AppData\Local\Temp\sc6o.
+24F8 cinit CODE >930:C:\Users\juanc\AppData\Local\Temp\sc6o.
+24FA cinit CODE >931:C:\Users\juanc\AppData\Local\Temp\sc6o.
+24FC cinit CODE >932:C:\Users\juanc\AppData\Local\Temp\sc6o.
+24FE cinit CODE >933:C:\Users\juanc\AppData\Local\Temp\sc6o.
+2500 cinit CODE >938:C:\Users\juanc\AppData\Local\Temp\sc6o.
+2502 cinit CODE >939:C:\Users\juanc\AppData\Local\Temp\sc6o.
+2504 cinit CODE >940:C:\Users\juanc\AppData\Local\Temp\sc6o.
+2506 cinit CODE >941:C:\Users\juanc\AppData\Local\Temp\sc6o.
+2508 cinit CODE >942:C:\Users\juanc\AppData\Local\Temp\sc6o.
+250A cinit CODE >943:C:\Users\juanc\AppData\Local\Temp\sc6o.
+250C cinit CODE >944:C:\Users\juanc\AppData\Local\Temp\sc6o.
+250E cinit CODE >945:C:\Users\juanc\AppData\Local\Temp\sc6o.
+2512 cinit CODE >946:C:\Users\juanc\AppData\Local\Temp\sc6o.
+2514 cinit CODE >947:C:\Users\juanc\AppData\Local\Temp\sc6o.
+2518 cinit CODE >953:C:\Users\juanc\AppData\Local\Temp\sc6o.
+2518 cinit CODE >955:C:\Users\juanc\AppData\Local\Temp\sc6o.
+251A cinit CODE >956:C:\Users\juanc\AppData\Local\Temp\sc6o.
+251C cinit CODE >958:C:\Users\juanc\AppData\Local\Temp\sc6o.
+251E cinit CODE >959:C:\Users\juanc\AppData\Local\Temp\sc6o.
+2520 cinit CODE >960:C:\Users\juanc\AppData\Local\Temp\sc6o.
+2522 cinit CODE >961:C:\Users\juanc\AppData\Local\Temp\sc6o.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___awdiv@counter 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___lwmod@counter 21 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\PROYECTO_CD2.X.production.obj
+Config_ADC@CanalesA 17 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Hspace_1 A7 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+___ftdiv@exp 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\PROYECTO_CD2.X.production.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\juanc\AppData\Local\Temp\sc6o.obj
+___awtoft@sign 21 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_VREGEN$ON 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+main@i 9F 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+main@j 9D 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+main@k 95 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\PROYECTO_CD2.X.production.obj
+duty_cycle_pwm@val_pwm 46 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+_RBIF 7F90 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_TMR0 FD6 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\juanc\AppData\Local\Temp\sc6o.obj
+_main 8C2 0 CODE 0 text0 dist/default/production\PROYECTO_CD2.X.production.obj
+_menu A3 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+btemp 4A 0 COMRAM 1 temp dist/default/production\PROYECTO_CD2.X.production.obj
+___ftadd@f1 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___ftadd@f2 21 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+start 16 0 CODE 0 init C:\Users\juanc\AppData\Local\Temp\sc6o.obj
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of___awmod 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of___ftadd 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of___ftdiv 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of___ftmul 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of___ftneg 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of___fttol 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+lcd_cursor@cursor 18 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of_lcd_borrar 2616 0 CODE 0 text11 dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_DEBUG$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+?___wmul 16 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of_lcd_cursor 260E 0 CODE 0 text10 dist/default/production\PROYECTO_CD2.X.production.obj
+___ftdiv@f1 22 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___ftdiv@f2 25 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___ftdiv@f3 2C 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Hpowerup 16 0 CODE 0 powerup dist/default/production\PROYECTO_CD2.X.production.obj
+lcd_dato@dato2 16 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___awmod@sign 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+_leer_tecla_d 1D62 0 CODE 0 text27 dist/default/production\PROYECTO_CD2.X.production.obj
+_T0CONbits FD5 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__accesstop 60 0 ABS 0 - C:\Users\juanc\AppData\Local\Temp\sc6o.obj
+intlevel0 0 0 CODE 0 text C:\Users\juanc\AppData\Local\Temp\sc6o.obj
+intlevel1 0 0 CODE 0 text C:\Users\juanc\AppData\Local\Temp\sc6o.obj
+intlevel2 0 0 CODE 0 text C:\Users\juanc\AppData\Local\Temp\sc6o.obj
+intlevel3 0 0 CODE 0 text C:\Users\juanc\AppData\Local\Temp\sc6o.obj
+__CFG_USBDIV$2 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_Config_ADC 18CE 0 CODE 0 text25 dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\PROYECTO_CD2.X.production.obj
+___awdiv@sign 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\PROYECTO_CD2.X.production.obj
+__pidataCOMRAM 2616 0 CODE 0 idataCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___ftmul@f1 31 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___ftmul@f2 34 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___ftneg@f1 16 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___wmul@multiplicand 18 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of_lcd_inicializar 22B2 0 CODE 0 text7 dist/default/production\PROYECTO_CD2.X.production.obj
+_ADCON0 FC2 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_ADCON2 FC0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_ADRESH FC4 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_ADRESL FC3 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+___awdiv@dividend 16 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\juanc\AppData\Local\Temp\sc6o.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\juanc\AppData\Local\Temp\sc6o.obj
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of___awtoft 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_CCPR2L FBB 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of_leer_tecla_d 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of___wmul 259E 0 CODE 0 text3 dist/default/production\PROYECTO_CD2.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\PROYECTO_CD2.X.production.obj
+main@led 90 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+main@pwm 8E 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+___fttol@f1 40 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\PROYECTO_CD2.X.production.obj
+__Hintcodelo 16 0 CODE 0 intcodelo dist/default/production\PROYECTO_CD2.X.production.obj
+___awdiv@divisor 18 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___lwmod@divisor 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of___ftpack 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of___awdiv 2232 0 CODE 0 text23 dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of___awmod 2322 0 CODE 0 text22 dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of___ftadd 1C34 0 CODE 0 text20 dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of___ftdiv 2052 0 CODE 0 text19 dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of___ftmul 1F6C 0 CODE 0 text15 dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of___ftneg 25C2 0 CODE 0 text18 dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of___fttol 1D62 0 CODE 0 text14 dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of___lwdiv 23D2 0 CODE 0 text5 dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of___lwmod 2458 0 CODE 0 text4 dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of_isdigit 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+lcd_posicion@a 19 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+lcd_posicion@b 18 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of_leer_tecla_d 1E78 0 CODE 0 text27 dist/default/production\PROYECTO_CD2.X.production.obj
+_dpowers 801 0 SMALLCONST 0 smallconst dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of_Config_ADC 1A88 0 CODE 0 text25 dist/default/production\PROYECTO_CD2.X.production.obj
+___lwdiv@quotient 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+_lcd_inicializar 2232 0 CODE 0 text7 dist/default/production\PROYECTO_CD2.X.production.obj
+_INTCON2bits FF1 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+___lwmod@dividend 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Lintcodelo 16 0 CODE 0 intcodelo dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+start_initialization 24F6 0 CODE 0 cinit dist/default/production\PROYECTO_CD2.X.production.obj
+?_leer_tecla_d 1 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+_lcd_comando 2490 0 CODE 0 text12 dist/default/production\PROYECTO_CD2.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___awtoft 2458 0 CODE 0 text16 dist/default/production\PROYECTO_CD2.X.production.obj
+leer_tecla_d@t 4 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+_TRISEbits F96 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+lcd_posicion@direccion 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___rparam_used 1 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_STVREN$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of___awtoft 2490 0 CODE 0 text16 dist/default/production\PROYECTO_CD2.X.production.obj
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+main@tiempo1 9B 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+___fttol@exp1 6A 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+___fttol@lval 66 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+main@unidades A1 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+_TMR0IF 7F92 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of_duty_cycle_pwm 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+___ftpack 2052 0 CODE 0 text21 dist/default/production\PROYECTO_CD2.X.production.obj
+Valor_ADC@canalAdc 18 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of_lcd_borrar 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_configurar_pwm 2526 0 CODE 0 text17 dist/default/production\PROYECTO_CD2.X.production.obj
+___ftpack@arg 16 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___ftpack@exp 19 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+_isdigit$997 17 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of_lcd_cursor 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of___ftpack 2100 0 CODE 0 text21 dist/default/production\PROYECTO_CD2.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\PROYECTO_CD2.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\PROYECTO_CD2.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\PROYECTO_CD2.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\PROYECTO_CD2.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\PROYECTO_CD2.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\PROYECTO_CD2.X.production.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\PROYECTO_CD2.X.production.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\PROYECTO_CD2.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production\PROYECTO_CD2.X.production.obj
+__Hconst 0 0 CODE 0 const dist/default/production\PROYECTO_CD2.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production\PROYECTO_CD2.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\PROYECTO_CD2.X.production.obj
+?_Valor_ADC 16 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\PROYECTO_CD2.X.production.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\PROYECTO_CD2.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\PROYECTO_CD2.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production\PROYECTO_CD2.X.production.obj
+___lwdiv@counter 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\PROYECTO_CD2.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production\PROYECTO_CD2.X.production.obj
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\juanc\AppData\Local\Temp\sc6o.obj
+__end_of_sprintf 18CE 0 CODE 0 text1 dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of_lcd_dato 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production\PROYECTO_CD2.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\PROYECTO_CD2.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\PROYECTO_CD2.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\PROYECTO_CD2.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\PROYECTO_CD2.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\PROYECTO_CD2.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\PROYECTO_CD2.X.production.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\PROYECTO_CD2.X.production.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of_isdigit 2600 0 CODE 0 text2 dist/default/production\PROYECTO_CD2.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production\PROYECTO_CD2.X.production.obj
+__Lconst 0 0 CODE 0 const dist/default/production\PROYECTO_CD2.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production\PROYECTO_CD2.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\PROYECTO_CD2.X.production.obj
+___ftadd@exp1 29 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___ftadd@exp2 28 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___ftadd@sign 27 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\PROYECTO_CD2.X.production.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\PROYECTO_CD2.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\PROYECTO_CD2.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production\PROYECTO_CD2.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\PROYECTO_CD2.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\PROYECTO_CD2.X.production.obj
+_PORTBbits F81 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_PORTEbits F84 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production\PROYECTO_CD2.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production\PROYECTO_CD2.X.production.obj
+__Hinit 16 0 CODE 0 init dist/default/production\PROYECTO_CD2.X.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\PROYECTO_CD2.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\PROYECTO_CD2.X.production.obj
+__Htemp 4B 0 COMRAM 1 temp dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production\PROYECTO_CD2.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production\PROYECTO_CD2.X.production.obj
+__Linit 16 0 CODE 0 init dist/default/production\PROYECTO_CD2.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\PROYECTO_CD2.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltemp 4A 0 COMRAM 1 temp dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+___wmul 2578 0 CODE 0 text3 dist/default/production\PROYECTO_CD2.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+int$flags 4A 0 COMRAM 1 temp dist/default/production\PROYECTO_CD2.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production\PROYECTO_CD2.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production\PROYECTO_CD2.X.production.obj
+_PR2 FCB 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__S1 A7 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__S2 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_isr 8 0 CODE 0 intcode dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of_lcd_inicializar 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+configurar_pwm@a 17 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+configurar_pwm@b 16 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+Valor_ADC@ResultadoAdc 19 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of_configurar_pwm 2550 0 CODE 0 text17 dist/default/production\PROYECTO_CD2.X.production.obj
+leer_tecla_d@tecla_teclado 6 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_PLLDIV$5 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+main@decenas 93 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_PBADEN$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+lcd_inicializar@i 19 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+Config_ADC@TAD 16 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___awtoft@c 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\PROYECTO_CD2.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\PROYECTO_CD2.X.production.obj
+sprintf@len 34 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+sprintf@val 36 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of_isr 21AE 0 CODE 0 intcode_body dist/default/production\PROYECTO_CD2.X.production.obj
+int_func 2100 0 CODE 0 intcode_body dist/default/production\PROYECTO_CD2.X.production.obj
+_lcd_dato 25C2 0 CODE 0 text9 dist/default/production\PROYECTO_CD2.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production\PROYECTO_CD2.X.production.obj
+__Hramtop 800 0 RAM 0 ramtop dist/default/production\PROYECTO_CD2.X.production.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\PROYECTO_CD2.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of_lcd_dato 25E2 0 CODE 0 text9 dist/default/production\PROYECTO_CD2.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext18 0 0 ABS 0 text18 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext19 0 0 ABS 0 text19 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext20 0 0 ABS 0 text20 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext21 0 0 ABS 0 text21 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext22 0 0 ABS 0 text22 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext23 0 0 ABS 0 text23 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext24 0 0 ABS 0 text24 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext25 0 0 ABS 0 text25 dist/default/production\PROYECTO_CD2.X.production.obj
+__Htext27 0 0 ABS 0 text27 dist/default/production\PROYECTO_CD2.X.production.obj
+?___awtoft 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of_Config_ADC 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+___awmod@counter 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+sprintf@flag 33 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+sprintf@prec 30 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext10 2600 0 CODE 0 text10 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext11 260E 0 CODE 0 text11 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext12 2490 0 CODE 0 text12 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext13 2322 0 CODE 0 text13 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext14 1C34 0 CODE 0 text14 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext15 1E78 0 CODE 0 text15 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext16 2458 0 CODE 0 text16 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext17 2526 0 CODE 0 text17 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext18 259E 0 CODE 0 text18 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext19 1F6C 0 CODE 0 text19 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext20 1A88 0 CODE 0 text20 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext21 2052 0 CODE 0 text21 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext22 22B2 0 CODE 0 text22 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext23 21AE 0 CODE 0 text23 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext24 23D2 0 CODE 0 text24 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext25 18CE 0 CODE 0 text25 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext27 1D62 0 CODE 0 text27 dist/default/production\PROYECTO_CD2.X.production.obj
+___awdiv 21AE 0 CODE 0 text23 dist/default/production\PROYECTO_CD2.X.production.obj
+___awmod 22B2 0 CODE 0 text22 dist/default/production\PROYECTO_CD2.X.production.obj
+___ftadd 1A88 0 CODE 0 text20 dist/default/production\PROYECTO_CD2.X.production.obj
+___ftdiv 1F6C 0 CODE 0 text19 dist/default/production\PROYECTO_CD2.X.production.obj
+___ftmul 1E78 0 CODE 0 text15 dist/default/production\PROYECTO_CD2.X.production.obj
+___ftneg 259E 0 CODE 0 text18 dist/default/production\PROYECTO_CD2.X.production.obj
+___fttol 1C34 0 CODE 0 text14 dist/default/production\PROYECTO_CD2.X.production.obj
+__pintcode_body 2100 0 CODE 0 intcode_body dist/default/production\PROYECTO_CD2.X.production.obj
+___lwdiv 2380 0 CODE 0 text5 dist/default/production\PROYECTO_CD2.X.production.obj
+___lwmod 2416 0 CODE 0 text4 dist/default/production\PROYECTO_CD2.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\PROYECTO_CD2.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_BOR$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_BORV$0 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+duty_cycle_pwm@porc_pwm 6B 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production\PROYECTO_CD2.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\PROYECTO_CD2.X.production.obj
+?___ftpack 16 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+_lcd_escribir 24C4 0 CODE 0 text8 dist/default/production\PROYECTO_CD2.X.production.obj
+___wmul@multiplier 16 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\PROYECTO_CD2.X.production.obj
+___lwdiv@divisor 18 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+main@linea 6E 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\PROYECTO_CD2.X.production.obj
+_tiempo A5 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+Config_ADC@Justificacion 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_CCP2MX$ON 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+stackhi 7FF 0 ABS 0 - C:\Users\juanc\AppData\Local\Temp\sc6o.obj
+stacklo A7 0 ABS 0 - C:\Users\juanc\AppData\Local\Temp\sc6o.obj
+__Lintcode 8 0 CODE 0 intcode dist/default/production\PROYECTO_CD2.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production\PROYECTO_CD2.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production\PROYECTO_CD2.X.production.obj
+_ADCON0bits FC2 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_ADCON2bits FC0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_ICPRT$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+___ftmul@cntr 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___ftmul@sign 3F 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+lcd_escribir@cadena 17 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+_PIR1bits F9E 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Lend_init 16 0 CODE 0 end_init dist/default/production\PROYECTO_CD2.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of_lcd_comando 24C4 0 CODE 0 text12 dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_CPUDIV$OSC1_PLL2 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_lcd_posicion 2550 0 CODE 0 text6 dist/default/production\PROYECTO_CD2.X.production.obj
+end_of_initialization 2518 0 CODE 0 cinit dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of_lcd_escribir 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\PROYECTO_CD2.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production\PROYECTO_CD2.X.production.obj
+___awdiv@quotient 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+?___awdiv 16 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+?___awmod 16 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___lwdiv@dividend 16 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+?___ftadd 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+?___ftdiv 22 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+?___ftmul 31 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+?___ftneg 16 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+?___fttol 40 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+?___lwdiv 16 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+?___lwmod 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\PROYECTO_CD2.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+___awmod@dividend 16 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Lramtop 800 0 RAM 0 ramtop dist/default/production\PROYECTO_CD2.X.production.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\PROYECTO_CD2.X.production.obj
+__pcinit 24F6 0 CODE 0 cinit dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext0 8C2 0 CODE 0 text0 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext1 15FC 0 CODE 0 text1 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext2 25E2 0 CODE 0 text2 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext3 2578 0 CODE 0 text3 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext4 2416 0 CODE 0 text4 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext5 2380 0 CODE 0 text5 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext6 2550 0 CODE 0 text6 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext7 2232 0 CODE 0 text7 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext8 24C4 0 CODE 0 text8 dist/default/production\PROYECTO_CD2.X.production.obj
+__ptext9 25C2 0 CODE 0 text9 dist/default/production\PROYECTO_CD2.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/production\PROYECTO_CD2.X.production.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/production\PROYECTO_CD2.X.production.obj
+main@linea2 7E 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\juanc\AppData\Local\Temp\sc6o.obj
+_sprintf 15FC 0 CODE 0 text1 dist/default/production\PROYECTO_CD2.X.production.obj
+main@luzext 97 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of_lcd_escribir 24F6 0 CODE 0 text8 dist/default/production\PROYECTO_CD2.X.production.obj
+__Lpowerup 16 0 CODE 0 powerup dist/default/production\PROYECTO_CD2.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\PROYECTO_CD2.X.production.obj
+sprintf@ap 31 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+sprintf@cp 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+sprintf@sp 22 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+_isdigit 25E2 0 CODE 0 text2 dist/default/production\PROYECTO_CD2.X.production.obj
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\PROYECTO_CD2.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\PROYECTO_CD2.X.production.obj
+_duty_cycle_pwm 2322 0 CODE 0 text13 dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of_Valor_ADC 2416 0 CODE 0 text24 dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of_lcd_posicion 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of_Valor_ADC 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+___param_bank 10 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_WDTPS$1 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\PROYECTO_CD2.X.production.obj
+___ftmul@exp 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of__initialization 2518 0 CODE 0 cinit dist/default/production\PROYECTO_CD2.X.production.obj
+___awmod@divisor 18 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_WRT2$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_WRT3$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+main@tecla2 99 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\PROYECTO_CD2.X.production.obj
+lcd_comando@dato 17 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___ftpack@sign 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+_Valor_ADC 23D2 0 CODE 0 text24 dist/default/production\PROYECTO_CD2.X.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___ftdiv@cntr 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+___ftdiv@sign 30 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of_lcd_posicion 2578 0 CODE 0 text6 dist/default/production\PROYECTO_CD2.X.production.obj
+__Hend_init 1A 0 CODE 0 end_init dist/default/production\PROYECTO_CD2.X.production.obj
+lcd_escribir@i 19 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+sprintf@c 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+sprintf@f 24 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_PWRT$ON 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of_main 15FC 0 CODE 0 text0 dist/default/production\PROYECTO_CD2.X.production.obj
+_CCP2CONbits FBA 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__pintcode 8 0 CODE 0 intcode dist/default/production\PROYECTO_CD2.X.production.obj
+isdigit@c 18 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of_dpowers 80B 0 SMALLCONST 0 smallconst dist/default/production\PROYECTO_CD2.X.production.obj
+?_sprintf 22 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+_PORTB F81 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_PORTD F83 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_T2CON FCA 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_TRISC F94 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_TRISD F95 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production\PROYECTO_CD2.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production\PROYECTO_CD2.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production\PROYECTO_CD2.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production\PROYECTO_CD2.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production\PROYECTO_CD2.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_CP2$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_CP3$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_tecla 48 0 COMRAM 1 dataCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+_CCP2CON FBA 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+___fttol@sign1 65 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+sprintf@width 38 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of_configurar_pwm 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+__end_of_duty_cycle_pwm 2380 0 CODE 0 text13 dist/default/production\PROYECTO_CD2.X.production.obj
+_lcd_borrar 260E 0 CODE 0 text11 dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of_isr 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+_lcd_cursor 2600 0 CODE 0 text10 dist/default/production\PROYECTO_CD2.X.production.obj
+__initialization 24F6 0 CODE 0 cinit dist/default/production\PROYECTO_CD2.X.production.obj
+__pbssBANK0 A3 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_CD2.X.production.obj
+__pdataCOMRAM 48 0 COMRAM 1 dataCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\PROYECTO_CD2.X.production.obj
+___wmul@product 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Hsmallconst 8C2 0 SMALLCONST 0 smallconst dist/default/production\PROYECTO_CD2.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\PROYECTO_CD2.X.production.obj
+lcd_cursor@blinking 19 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\PROYECTO_CD2.X.production.obj
+__Hintcode 16 0 CODE 0 intcode dist/default/production\PROYECTO_CD2.X.production.obj
+__size_of_lcd_comando 0 0 ABS 0 - dist/default/production\PROYECTO_CD2.X.production.obj
+___ftmul@f3_as_product 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\PROYECTO_CD2.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+idloc 0 200000 200000 8 1
+text0 0 8C2 8C2 1D56 1
+cstackCOMRAM 1 1 1 4A 1
+cstackBANK0 1 60 60 47 1
+reset_vec 0 0 0 4 1
+intcode 0 8 8 12 1
+smallconst 0 800 800 C2 1
+config 0 300000 300000 E 1
